@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Collage Tuberkulose</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+
+    <body>
+        <div id="overlap"></div>
+        <div id="blank">
+        </div>
+            <div id="container">
+                <!--ITEMS-->
+                <img id="background" />
+            </div>
+    </body>
+
+
+    <dialog id="exit-dialog">
+        <p>Wollen Sie wirklich diesen Raum verlassen?</p>
+        <button id="exit-dialog-yes">Ja</button>
+        <button id="exit-dialog-no">Nein</button>
+    </dialog>
+
+    <!--
+        1 - neues Zimmer
+    -->
+
+    <dialog id="dialog-patient">
+        <h1>Verbreitung der Tuberkulose</h1>
+        <audio controls autoplay id="dialog-patient-audio">
+            <source src="res/1/sounds/neuzeit_ansteckung.mp3" type="audio/mp3" />
+        </audio>
+        <hr>
+        <button id="close-dialog-patient">Schließen</button>
+    </dialog>
+    
+    <dialog id="dialog-pictureframe">
+        <h1>Aufbau der Mykobakterie</h1>
+        <img src="res/1/imgs/mykobakterium.png" with="50%" height="50%" id="pictureframe_image"/>
+        <p>
+            In der Familie der Mykobakterien sind über 160 verschiedene Mitglieder vertreten, wobei die meisten von ihnen für den Menschen harmlos sind. Der am meisten auftretenden Erreger der Tuberkulose ist Mycobacterium tuberculosis. Neben diesem Erreger gibt es noch weitere welche Tuberkuose auslösen können. Zum Beispiel Mycobacterium bovis und Mycobacterium africanum. In Deutschland spielen diese Erreger wegen ihrer geografischen Seltenheit kaum eine Rolle. Mykobakterien unterscheiden sich in ihrer Zellwandaufbau von anderen Bakterien. Im Allgemeinen haben Mykobakterien eine gram-positive Zellwand. Sie haben also keine äußere Membran, sondern ein mehrschichtiges Peptidoglykan. Jedoch befindet sich über der Schicht von Peptidoglykan ein Polymer aus Arabinose und Galactose, das verschiedene Mykolsäuren, langkettige Lipide, bindet. Dies bedeutet, dass die Mykobakterien mit der herkömmlichen Gramfärbung kaum anfärbbar sind. Stattdessen können Farbstoffe nur durch Hitze und Phenol in die Bakterien eindringen. Mykobakterien sind daher auch schwieriger zu färben; eingedrungener Farbstoff wird auch bei der Behandlung mit einer Mischung aus Säure und Alkohol nicht wieder ausgewaschen. Daher werden Präparate von Ziehl-Neelsen hergestellt, um Mycobacterien nachzuweisen. Trehalose 6', 6' Dimycolat ist eine weitere Substanz, die in der Zellwand von Mycobacterium tuberculosis vorkommt und für die Bildung von Zopfstrukturen verantwortlich ist, insbesondere in flüssigen Nährmedien.
+        </p>
+        <hr>
+        <button id="close-dialog-pictureframe">Schließen</button>
+    </dialog>
+    
+    <dialog id="dialog-brochure">
+        <!--<h1>Geschichte der Belitzer Heilstätten</h1>-->
+        <img src="res/1/imgs/brochure.jpeg" />
+        <hr>
+        <button id="close-dialog-brochure">Schließen</button>
+    </dialog>
+    
+    <dialog id="dialog-meds">
+        <h1>Behandlung der Tuberkulose</h1>
+        <audio controls autoplay id="dialog-meds-audio">
+            <source src="res/1/sounds/behandlung.mp3" type="audio/mp3" />
+        </audio>
+        <hr>
+        <button id="close-dialog-meds">Schließen</button>
+    </dialog>
+
+    <!--
+        2 - OP Saal
+    -->
+
+    <dialog id="dialog-robertkoch">
+        <h1>Robert Koch</h1>
+        <audio controls id="dialog-robertkoch-audio">
+            <source src="res/2/sounds/robert_koch.mp3" type="audio/mp3" />
+        </audio>
+        <hr>
+        <button id="close-dialog-robertkoch">Schließen</button>
+    </dialog>
+
+    <dialog id="dialog-leuchtwand">
+        <h1>Diagnose der Tuberkulose</h1>
+        <video controls id="dialog-leuchtwand-video">
+            <source src="res/2/videos/diagnose.mp4" type="video/mp4" />
+        </video>
+        <hr>
+        <button id="close-dialog-leuchtwand">Schließen</button>
+    </dialog>
+
+    <dialog id="dialog-besteck">
+        <h1>Architektur und Behandlung in den Belitzer Heilstätten</h1>
+        <video controls id="dialog-besteck-video">
+            <source src="res/2/videos/architektur.mp4" type="video/mp4" />
+        </video>
+        <hr>
+        <button id="close-dialog-besteck">Schließen</button>
+    </dialog>
+
+    <dialog id="dialog-oplampe">
+        <h1>Originales Photo</h1>
+        <img src="res/2/imgs/lampe.jpeg" />
+        <hr>
+        <button id="close-dialog-oplampe">Schließen</button>
+    </dialog>
+
+    <!--
+        3 - Altes Zimmer
+    -->
+
+    <dialog id="dialog-buch">
+        <h1>Historischer Kontext</h1>
+        <img src="res/3/imgs/historischer_kontext.png" />
+        <hr>
+        <button id="close-dialog-buch">Schließen</button>
+    </dialog>
+
+    <dialog id="dialog-patientenkopf">
+        <h1>Krankheitsverlauf der Tuberkulose</h1>
+        <img src="res/3/imgs/krankheitsverlauf.jpg" />
+        <hr>
+        <button id="close-dialog-patientenkopf">Schließen</button>
+    </dialog>
+
+    <dialog id="dialog-patientenbody">
+        <h1>Symptome der Tuberkulose</h1>
+        <img src="res/3/imgs/symptome.png" />
+        <hr>
+        <button id="close-dialog-patientenbody">Schließen</button>
+    </dialog>
+
+    <dialog id="dialog-pictureframe2">
+        <h1>Belitzer Heilstätten Früher</h1>
+        <img src="res/3/imgs/old/1.jpeg" />
+        <img src="res/3/imgs/old/2.jpg" />
+        <img src="res/3/imgs/old/3.jpg" />
+        <img src="res/3/imgs/old/4.jpg" />
+        <img src="res/3/imgs/old/5.jpg" />
+        <img src="res/3/imgs/old/6.jpg" />
+        <img src="res/3/imgs/old/7.png" />
+        <img src="res/3/imgs/old/8.jpg" />
+        <img src="res/3/imgs/old/9.jpg" />
+        <hr>
+        <button id="close-dialog-pictureframe2">Schließen</button>
+    </dialog>
+
+    <script src="main.js"></script>
+
+</html>

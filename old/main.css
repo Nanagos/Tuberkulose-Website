@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.item {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    top: 0;
+    left: 0;
+    transition: filter 0.5s ease-out;
+    cursor: pointer;
+
+    visibility: hidden;
+    filter: drop-shadow(0 0 0.1em black);
+}
+.item:hover {
+    filter: drop-shadow(0.5em 0.5em 0.5em black);
+}
+
+#blank {
+    width: 100%;
+    height: 100%;
+    /*background-image: url("res/1/imgs/background.jpeg");
+    filter: blur(1000px);*/
+}
+
+#container {
+    position: absolute;
+}
+
+#background {
+    scale: 100%;
+    z-index: 0;
+}
+
+
+/* Style Generell */
+button {
+    width: 100%;
+    margin: 0.5em 0 0.5em 0;
+    text-align: center;
+    transition: 300ms;
+    min-height: 60px;
+    color: #3b3b3b;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 24px;
+    border-radius: 15px;
+    border: 2px solid #1A1A1A;
+
+    color: black;
+    background-color: white;
+    box-shadow: none;
+}
+button:hover {
+    color: #fff;
+    background-color: #1a1a1a;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+hr {
+    border-top: 2px solid #1a1a1a;
+    border-radius: 15px;
+}
+
+
+.overlap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1000;
+    visibility: "hidden";
+}
+
+/* Dialoge */
+dialog {
+    border: 0;
+    max-width: 80%;
+    transition: 1s;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+}
+
+dialog[open] {
+    animation: myFadeIn 0.5s ease-out normal;
+}
+@keyframes myFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+
+dialog video {
+    width: 100%;
+}
+
+dialog img {
+    width: 100%;
+}
+
+/* Dialog-spezifisch */
+#dialog-pictureframe {
+    width: 50%;
+}
+
+#dialog-pictureframe2 img {
+    border-radius: 15px;
+    width: 100%;
+}
